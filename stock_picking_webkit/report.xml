@@ -5,7 +5,7 @@
     <report id="webkit_aggregated_picking"
             name="webkit.aggregated_picking"
             auto="False"
-            model="stock.picking.out"
+            model="stock.picking"
             file="stock_picking_webkit/report/picking.html.mako"
             string="Aggregated pickings"
             report_type="webkit"
@@ -13,15 +13,15 @@
     <report id="webkit_aggregated_delivery"
             name="webkit.aggregated_delivery"
             auto="False"
-            model="stock.picking.out"
+            model="stock.picking"
             file="stock_picking_webkit/report/delivery.html.mako"
             string="Aggregated deliveries"
             report_type="webkit"
             header="False"/>
-    <report id="stock.report_picking_list_out"
+    <report id="webkit_report_picking_list_out"
             name="webkit.delivery_slip"
             auto="False"
-            model="stock.picking.out"
+            model="stock.picking"
             file="stock_picking_webkit/report/delivery_slip.mako"
             string="Delivery Order"
             report_type="webkit"
@@ -42,7 +42,7 @@
     </data>
 
     <data noupdate="1">
-        <record id="stock.report_picking_list_out" model="ir.actions.report.xml">
+        <record id="webkit_report_picking_list_out" model="ir.actions.report.xml">
            <field name="webkit_header" ref="base_headers_webkit.base_reports_portrait_header"></field>
         </record>
    </data>

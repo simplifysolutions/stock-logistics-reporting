@@ -5,6 +5,7 @@
 #   @author Nicolas Bessi
 #   Copyright (c) 2013 Agile Business Group (http://www.agilebg.com)
 #   @author Lorenzo Battistini
+#   Copyright (C) 2004-Today Simplify Solutions. All Rights Reserved
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -34,10 +35,11 @@ Three reports are provided:
     """,
     'author': "Camptocamp,Odoo Community Association (OCA)",
     'website': 'http://www.openerp.com',
-    'depends': ['base', 'report_webkit', 'base_headers_webkit', 'stock', 'delivery'],
+    'depends': ['base', 'report_webkit', 'base_headers_webkit',
+                'stock', 'delivery'],
     'data': ['report.xml',
              'stock_view.xml',
              ],
-    'installable': False,
+    'installable': True,
     'auto_install': False,
 }

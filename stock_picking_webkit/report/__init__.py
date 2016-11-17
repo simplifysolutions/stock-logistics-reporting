@@ -3,6 +3,7 @@
 #
 #   Copyright (c) 2011-2013 Camptocamp SA (http://www.camptocamp.com)
 #   @author Nicolas Bessi
+#   Copyright (C) 2004-Today Simplify Solutions. All Rights Reserved
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -19,3 +20,4 @@
 #
 ##############################################################################
 import stock_report
+import webkit_report_parser

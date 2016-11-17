@@ -80,7 +80,7 @@
             %for line in picking.move_lines:
                 <tr class="line">
                     <td style="text-align:left; " >${ line.name }</td>
-                    <td style="text-align:left; " >${ line.prodlot_id and line.prodlot_id.name or ''}</td>
+                    <td style="text-align:left; " >${ line.restrict_lot_id and line.restrict_lot_id.name or ''}</td>
                     <td class="amount" >${ formatLang(line.product_qty) } ${line.product_uom.name}</td>
                 </tr>
             %endfor
